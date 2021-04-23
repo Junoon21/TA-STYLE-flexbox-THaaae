@@ -55,23 +55,20 @@ table {
 /*header*/
 .header , .footer {
     background-color: blue;
-    height: 72px;
-    line-height: 72px;
     font-size: 26px;
     font-family: 'Roboto', sans-serif;
+    padding: 16px 0;
 }
-.brand {
-float: left;
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .brand img {
     width: 100px;
     height: 50px;
-    vertical-align: middle;
+   
 }
-.nav {
-    float: right;
-}
-    
 .link {
     color: cornsilk;
     font-size: 16px;
@@ -81,14 +78,6 @@ float: left;
 }
 .green {
     color: rgb(166, 235, 166);
-}
-/*clearfix*/
-.clearfix::before, .clearfix::after {
-    content: "";
-    display: table;
-}
-.clearfix::after {
-    clear: both;
 }
 /*main*/
 h1 {
@@ -103,15 +92,14 @@ h1 {
     background-color: darksalmon;
     margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 24px;
     
 }
 .column {
     width: 30%;
-    display: inline-flex;
-    flex-flow: row nowrap;
+     flex-wrap:nowrap;
 }
 .image {
     width: 100%;
